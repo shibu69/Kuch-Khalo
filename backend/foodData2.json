@@ -1,0 +1,223 @@
+[
+    {
+        "CategoryName": "Thalis",
+        "name": "Daal chawal thali with 2 roti",
+        "img": "https://images.unsplash.com/photo-1680993032090-1ef7ea9b51e5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "options": [
+            {
+                "half": "130",
+                "full": "220"
+            }
+        ],
+        "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer/Chicken/Mutton were added."
+    },
+    {
+        "CategoryName": "Thalis",
+        "name": "Rajasthani Thali",
+        "img": "https://www.gozocabs.com/blog/wp-content/uploads/2018/01/rajasthani-thali.jpg",
+        "options": [
+            {
+                "half": "150",
+                "full": "260"
+            }
+        ],
+        "description": "A traditional Rajasthani thali with an assortment of dishes like Gatte ki sabzi, Dal Baati, and Bajra roti."
+    },
+    {
+        "CategoryName": "Thalis",
+        "name": "Punjabi Thali",
+        "img": "https://www.spicingyourlife.com/wp-content/uploads/2017/03/Punjabi-Thali.jpg",
+        "options": [
+            {
+                "half": "140",
+                "full": "240"
+            }
+        ],
+        "description": "A delightful mix of North Indian flavors with dishes like Chole, Aloo Gobi, and Butter Naan."
+    },
+    {
+        "CategoryName": "Thalis",
+        "name": "Gujarati Thali",
+        "img": "https://i.ytimg.com/vi/-yqgxNuz9Fo/maxresdefault.jpg",
+        "options": [
+            {
+                "half": "135",
+                "full": "230"
+            }
+        ],
+        "description": "Experience the unique flavors of Gujarat with dishes like Dhokla, Khandvi, and Fafda."
+    },
+    {
+        "CategoryName": "Thalis",
+        "name": "South Indian Thali",
+        "img": "https://akm-img-a-in.tosshub.com/sites/dailyo/fb_feed_images/story_image/201708/thali-fb_081417094010.jpg",
+        "options": [
+            {
+                "half": "160",
+                "full": "270"
+            }
+        ],
+        "description": "A flavorsome array of South Indian delicacies like dosa, idli, sambar, and coconut chutney."
+    },
+    {
+        "CategoryName": "Thalis",
+        "name": "Bengali Thali",
+        "img": "https://www.mistay.in/travel-blog/content/images/2020/06/6-ballygunge-place.jpg",
+        "options": [
+            {
+                "half": "155",
+                "full": "265"
+            }
+        ],
+        "description": "Savor the taste of Bengal with dishes like fish curry, alur dom, and cholar dal."
+    },
+    {
+        "CategoryName": "Thalis",
+        "name": "Maharashtrian Thali",
+        "img": "https://i.ytimg.com/vi/G0BCTBmp0Nk/maxresdefault.jpg",
+        "options": [
+            {
+                "half": "145",
+                "full": "250"
+            }
+        ],
+        "description": "Indulge in the flavors of Maharashtra with dishes like puran poli, pav bhaji, and batata vada."
+    },
+    {
+        "CategoryName": "Thalis",
+        "name": "Kerala Thali",
+        "img": "https://static.india.com/wp-content/uploads/2017/08/kerala-sadhya.jpg",
+        "options": [
+            {
+                "half": "170",
+                "full": "280"
+            }
+        ],
+        "description": "Taste the authentic flavors of Kerala with dishes like appam, avial, and fish curry."
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Chilli Paneer",
+        "img": "https://media.istockphoto.com/photos/spicy-paneer-or-chilli-paneer-or-paneer-tikka-or-cottage-cheese-in-picture-id697316634?b=1&k=20&m=697316634&s=170667a&w=0&h=bctfHdYTz9q2dJUnuxGRDUUwC9UBWjL_oQo5ECVVDAs=",
+        "options": [
+            {
+                "half": "120",
+                "full": "200"
+            }
+        ],
+        "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer/Chicken/Mutton were added."
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Samosa",
+        "img": "https://foodiewish.com/wp-content/uploads/2020/03/Samosa-foodiewish.jpg",
+        "options": [
+            {
+                "half": "60",
+                "full": "100"
+            }
+        ],
+        "description": "Crispy pastry filled with spiced potatoes and peas, served with tamarind chutney."
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Vegetable Pakora",
+        "img": "https://1.bp.blogspot.com/-LKWsn4CFjDU/U0XBu6vTxHI/AAAAAAAAEA0/Kt6PyU6QXYU/s1600/036.JPG",
+        "options": [
+            {
+                "half": "70",
+                "full": "120"
+            }
+        ],
+        "description": "Crispy fritters made from mixed vegetables and chickpea flour."
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Paneer Tikka",
+        "img": "https://static.fanpage.it/wp-content/uploads/sites/22/2021/08/paneer-tikka.jpg",
+        "options": [
+            {
+                "half": "130",
+                "full": "220"
+            }
+        ],
+        "description": "Tandoori grilled cottage cheese marinated in yogurt and spices."
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Aloo Tikki",
+        "img": "https://www.honeywhatscooking.com/wp-content/uploads/2020/10/Aloo-Tikki-Chaat61.jpg",
+        "options": [
+            {
+                "half": "50",
+                "full": "90"
+            }
+        ],
+        "description": "Spiced potato patties served with tamarind and mint chutney."
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Margherita Pizza",
+        "img": "https://astrolabio.com.mx/wp-content/uploads/2015/11/Pizza-Margherita.jpg",
+        "options": [
+            {
+                "regular": "100",
+                "medium": "200",
+                "large": "320"
+            }
+        ],
+        "description": "Classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil."
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Vegetarian Supreme Pizza",
+        "img": "https://i.pinimg.com/originals/48/b5/d2/48b5d236bac9c2d3415a7ba3159280e5.jpg",
+        "options": [
+            {
+                "regular": "130",
+                "medium": "240",
+                "large": "360"
+            }
+        ],
+        "description": "Loaded with a variety of fresh vegetables including bell peppers, olives, onions, and mushrooms."
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Paneer Tikka Pizza",
+        "img": "https://1.bp.blogspot.com/-nhOMzZ3r348/Xtt_eWUOKGI/AAAAAAAAN3w/r09ofOZ7E8gePQ4sLCt81tNeqDtGFYYrACEwYBhgLKs4DAL1OcqxEYIkOClX32HOx3It7xQgE2IuWQGanrp2c9Y_GrdUdytmqVllAJfe3iShAyi_syjM5m2SBucdqvn3sdA-DfLwBLqehPGRQ4XKpTmBbkb7bCdO1CiE07TV7-SCFuJBLZAvx3q_UIuTbVwL9u_soWGLtnZjz3u2R0TmjLFbcKUrb3QFm49KxNvBEaY299ZmZgu_b3ZnYvpZnroLBgPIlGbK_Ib-zzj2t9SKoSM0sT6wWXctxQogdIZ8gM5uKzLUs7YEdyYD55BYOpYGOkJKgb3G9Res2uMn5Pb892wSlrSiGOtSK7xRhTSi8BY9YF2uu4tmyHtUttESPrtHwkfFY6URoqOK7embGAqiggOH-1-EiEu-EdBWtlYvu5S_SlLkf6L45XSWdV2hm8QzN1NIHVEttvAVHShZ7kE8FxcQASOuSAYHv_SKktPQIWR6iCKgIg33vy2tFHzHx-Hq-lHYWsQYOg_KPvsiQYSEoY43qCXFofSxPeEfhe3rN45E6RZbdGHO_mrffVn8HDKB_aGR_PslCS-w_v_bK_zWg2PLMxtTEW6GpMUt7ze8TmuruYrrlmZsA5JRxamMjt1YyearS3wTweotuP1N9QRSeMKGb7vYF/s1600/IMG_9500.jpg",
+        "options": [
+            {
+                "regular": "140",
+                "medium": "250",
+                "large": "370"
+            }
+        ],
+        "description": "A fusion of Indian flavors with paneer tikka, bell peppers, and red onions."
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Mushroom and Olive Pizza",
+        "img": "https://recipeland.com/images/r/13549/7df6e8116468199b09ae_1024.jpg",
+        "options": [
+            {
+                "regular": "120",
+                "medium": "230",
+                "large": "350"
+            }
+        ],
+        "description": "A flavorful combination of mushrooms, black olives, and mozzarella cheese."
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Spinach and Feta Pizza",
+        "img": "https://plantbasedwithamy.com/wp-content/uploads/2022/07/20220705_NatureNate070522_0060-scaled.jpg",
+        "options": [
+            {
+                "regular": "125",
+                "medium": "235",
+                "large": "360"
+            }
+        ],
+        "description": "A delightful vegetarian pizza with a combination of spinach, feta cheese, and garlic."
+    }
+]
