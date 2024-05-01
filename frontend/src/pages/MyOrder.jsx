@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 export default function MyOrder() {
   const [orderData, setOrderData] = useState("");
   const fetchOrder = async () => {
-    await fetch("http://localhost:5000/api/myOrderData", {
+    await fetch("https://kuch-khalo.onrender.com/api/myOrderData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

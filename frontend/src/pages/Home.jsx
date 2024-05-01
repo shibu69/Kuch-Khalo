@@ -8,7 +8,7 @@ const Home = () => {
 
   const loadData = async () => {
     // Fetch data from the server
-    let response = await fetch("http://localhost:5000/api/foodItems", {
+    let response = await fetch("https://kuch-khalo.onrender.com/api/foodItems", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

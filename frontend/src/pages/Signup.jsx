@@ -15,7 +15,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/api/signup", {
+            const response = await fetch("https://kuch-khalo.onrender.com/api/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
