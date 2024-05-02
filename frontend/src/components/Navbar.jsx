@@ -7,6 +7,7 @@ import Cart from "../pages/Cart";
 
 const Navbar = () => {
   const [cartView, setCartView] = useState(false);
+  const [respNavOpen, setRespNavOpen] = useState(false);
   const navigate = useNavigate();
   let data = useCart();
 
@@ -32,10 +33,114 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => setRespNavOpen(!respNavOpen)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        {respNavOpen && (
+          <div
+            id="respNavbar"
+            style={{
+              background: "black",
+              height: "300px",
+              opacity: "0.",
+              width: "100%",
+              zIndex: "10000000",
+              position: "absolute",
+              top: "100%",
+              left: "0",
+            }}
+          >
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                margin: "auto",
+                fontSize: "30px",
+                flexDirection: "column",
+              }}
+            >
+              <li className="nav-item">
+                <Link
+                  className="nav-link active fs-5 bold"
+                  to="/"
+                  onClick={() => setRespNavOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              {localStorage.getItem("authToken") ? (
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active fs-5 bold"
+                    to="/myorder"
+                    onClick={() => setRespNavOpen(false)}
+                  >
+                    My Orders
+                  </Link>
+                </li>
+              ) : (
+                ""
+              )}
+              {!localStorage.getItem("authToken") ? (
+                <>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link active fs-5 bold"
+                      to="/login"
+                      onClick={() => setRespNavOpen(false)}
+                    >
+                      Login
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link active fs-5 bold"
+                      to="/signup"
+                      onClick={() => setRespNavOpen(false)}
+                    >
+                      SignUp
+                    </Link>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link active fs-5 bold"
+                      onClick={() => {
+                        setCartView(true);
+                        setRespNavOpen(false);
+                      }}
+                    >
+                      My Cart{" "}
+                      {data.length !== 0 ? (
+                        <Badge pill bg="danger">
+                          {data.length}
+                        </Badge>
+                      ) : null}
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link active fs-5 bold"
+                      onClick={()=>{handleLogout();
+                        setRespNavOpen(false);
+                      }}
+                    >
+                      Logout
+                    </Link>
+                  </li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
         {/* Navbar items and links */}
+
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav me-auto">
             {/* Home link */}
