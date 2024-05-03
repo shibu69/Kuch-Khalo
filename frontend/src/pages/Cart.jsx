@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState}from "react";
 import { useCart, useDispatchCart } from "../components/ContextReducer";
 import trash from "../trash.svg";
 
 const Cart = () => {
   let data = useCart();
   let dispatch = useDispatchCart();
+  const [showAlert, setShowAlert] = useState(false); // State for managing alert visibility
   if (data.length === 0) {
     return (
       <div>
@@ -12,6 +13,10 @@ const Cart = () => {
       </div>
     );
   }
+  setTimeout(() => {
+    setShowAlert(false);
+  }, 4000); // Change to 3000 for 3 seconds
+  
 
   const handleCheckout = async () => {
     let userEmail = localStorage.getItem("userEmail");
@@ -26,7 +31,6 @@ const Cart = () => {
         order_date: new Date().toDateString(),
       }),
     });
-
     if(response.status===200){
       dispatch({type:"DROP"})
     }
@@ -37,6 +41,31 @@ const Cart = () => {
   return (
     <div>
       <div className="container m-auto mt-5 table-responsive table-responsive-sm table-responsive-md">
+      {showAlert && (
+        <div
+          className="alert alert-warning bg-success alert-dismissible fade show"
+          role="alert"
+          style={{
+            position: "fixed",
+            top: "10px",
+            height:"60px",
+            right: "10px",
+            zIndex: "1000000000",
+            width: "300px",
+            color: "white",
+            border: "none",
+          }}
+        >
+          <p className="fs-5">Order Placed Successfully</p>
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+            onClick={() => setShowAlert(false)} // Close the alert
+          ></button>
+        </div>
+      )}
         <table className="table table-hover">
           <thead className="text-success fs-4">
             <tr>
@@ -77,7 +106,7 @@ const Cart = () => {
           <h1 className="fs-2">Total Price : ₹ {totalPrice} /-</h1>
         </div>
         <div>
-          <button className="btn bg-success mt-5" onClick={handleCheckout}>Check Out</button>
+          <button className="btn bg-success mt-5" onClick={()=>{handleCheckout();setShowAlert(true);}}>Check Out</button>
         </div>
       </div>
     </div>
