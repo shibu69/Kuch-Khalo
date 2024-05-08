@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
+import { ThreeCircles } from "react-loader-spinner";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
   const [foodCategory, setFoodCategory] = useState([]);
   const [FoodItem, setFoodItem] = useState([]);
   const [search, setSearch] = useState([]);
 
   const loadData = async () => {
     // Fetch data from the server
-    let response = await fetch("https://kuch-khalo.onrender.com/api/foodItems", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    let response = await fetch(
+      "https://kuch-khalo.onrender.com/api/foodItems",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     // Parse the response as JSON
     response = await response.json();
@@ -21,6 +26,7 @@ const Home = () => {
     // Set state with fetched data
     setFoodItem(response[0]);
     setFoodCategory(response[1]);
+    setLoading(false); // Set loading to false once data is fetched
   };
 
   useEffect(() => {
@@ -30,6 +36,34 @@ const Home = () => {
 
   return (
     <div>
+      {/* Loader */}
+      {loading && (
+        <div
+          style={{
+            backgroundColor: "#7A5F5F",
+            height: "100vh",
+            width: "100vw",
+            zIndex: "100000000",
+            position: "absolute",
+            top: "0",
+            left: "0",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <ThreeCircles
+            visible={true}
+            height="150"
+            width="150"
+            color="#E75653"
+            ariaLabel="three-circles-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+          />
+        </div>
+      )}
+
       <div id="home-container">
         {/* Carousel Component */}
         <div>
