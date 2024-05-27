@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 import { ThreeCircles } from "react-loader-spinner";
+import img1 from "../components/Image/img1.jpg"
+import img2 from "../components/Image/img2.jpg"
+import img3 from "../components/Image/img3.webp"
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -122,7 +125,7 @@ const Home = () => {
               {/* Carousel images */}
               <div className="carousel-item active">
                 <img
-                  src="https://source.unsplash.com/random/300×300/?food"
+                  src={img1}
                   className="d-block w-100"
                   alt="..."
                   style={{ filter: "brightness(30%)" }}
@@ -130,7 +133,7 @@ const Home = () => {
               </div>
               <div className="carousel-item">
                 <img
-                  src="https://source.unsplash.com/random/300×300/?pizza"
+                  src={img2}
                   className="d-block w-100"
                   alt="..."
                   style={{ filter: "brightness(30%)" }}
@@ -138,7 +141,7 @@ const Home = () => {
               </div>
               <div className="carousel-item">
                 <img
-                  src="https://source.unsplash.com/random/300×300/?burger"
+                  src={img3}
                   className="d-block w-100"
                   alt="..."
                   style={{ filter: "brightness(30%)" }}
